@@ -10,12 +10,28 @@
     <hr />
 
     <p>This is for search.</p>
+    <form action = "" method = "get">
+      <p>What do you want to search?
+	<input type = "text" name = "Traget" maxlength = "15" />
+      </p>
+
+    </form>
+    <form action = "">
+      <p>Please select the enginer you want to use:</p>
+      <br />
+      <input type = "radio" name = "enginer" value = "baidu" checked = "checked" />baidu
+      <input type = "radio" name = "enginer" value = "zcn" />Z.cn
+      <input type = "radio" name = "enginer" value = "jingdong" /> jingdong
+    </form>
+    
+
+    
     <dl>
       <dt><a href = "http://www.baidu.com"><img src = "images/bd_logo1.png" alt = "百度" width = "270" height = "129"/></a></dt>
       <dd>Maybe is the best one of Chinese.</dd>
       <br />
       <dt><a href = "http://www.duckduckgo.com"><img src = "images/Duckduckgo_logo.png" alt = "Duckduckgo" width = "225" height = "129"/></a></dt>
-      <dd>Useful one.</dd>
+      <dd>Sometimes works.</dd>
       <dt><a href = "http://www.google.com"><img src = "images/googlelogo.png" alt = "Google" width = "272" height = "92"\></a></dt>
       <dd>Anyway, you can't use it.</dd>
     </dl>
@@ -28,28 +44,32 @@
       <li><a href = "https://melpa.org/#/">MELPA</a></li>
       <li><a href = "https://github.com">Github</a></li>
     </ul>
-
+    <hr />
     <p id = T-list>This is for to-do list</p>
-    <ul>
-      <li>Done:</li>
-      <dl>
-	<dt>task1:</dt>
-	<dd>balabalabala</dd>
-	
-	<dt>task2:</dt>
-	<dd>balabalabala</dd>
-      </dl>
+    <table>
+      <tr>
+	<th cowlpan = "2">To-Do List</th> <th colspan = "3">Done list</th>
+      </tr>	
+      <tr>
+	<th>Name</th> <th>Dead Time</th> <th>Name</th> <th>Dead Time</th> <th>Finished Time</th>
+      </tr>
+      <tr>
+	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td>
+      </tr>
+      <tr>
+	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td>
+      </tr>
+    </table>
+    
 
-      <li>To-Do</li>
-      <dl>
-	<dt>task3:</dt>
-	<dd>balabalabala</dd>
 
-	<dt>task4:</dt>
-	<dd>balabalabala</dd>
-      </dl>
-    </ul>
+
+
+
+
+
     <a href = "doslist/index.html">For more information</a>
+
     <p>This is for signs.</p>
     <ul>
       <li>computer</li> <li>science</li> <li>techn</li>
