@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <title>
     Christina
@@ -9,25 +10,26 @@
     <br />
     <hr />
 
-    <p>This is for search.</p>
-    <form action = "" method = "get">
-      <p>What do you want to search?
-	<input type = "text" name = "Traget" maxlength = "15" />
-      </p>
 
-    </form>
+    <p>This is for search.</p>
+    <lable>
+      <form action = "" method = "get">
+	<p>What do you want to search?</p>
+	<input type = "search" name = "Traget" maxlength = "15" />
+      </form>
+    </lable>
+    
     <form action = "">
-      <p>Please select the enginer you want to use:</p>
-      <br />
-      <input type = "radio" name = "enginer" value = "baidu" checked = "checked" />baidu
-      <input type = "radio" name = "enginer" value = "zcn" />Z.cn
-      <input type = "radio" name = "enginer" value = "jingdong" /> jingdong
+      <p>Select enginer:</p>
+      <input id = "sBaidu" type = "radio" name = "enginer" value = "baidu" checked = "checked" /> <lable for = "sBaidu">baidu</lable>
+      <input id = "sZcn" type = "radio" name = "enginer" value = "zcn" /> <lable for = "sZcn"> Z.cn</lable>
+      <input id = "sJingdong" type = "radio" name = "enginer" value = "jingdong" /> <lable for = "sJingdong">jingdong</lable>
     </form>
     
 
     
     <dl>
-      <dt><a href = "http://www.baidu.com"><img src = "images/bd_logo1.png" alt = "百度" width = "270" height = "129"/></a></dt>
+      <dt><a href = "http://www.baidu.com" target = "_blank"><img src = "images/bd_logo1.png" alt = "百度" width = "270" height = "129"/></a></dt>
       <dd>Maybe is the best one of Chinese.</dd>
       <br />
       <dt><a href = "http://www.duckduckgo.com"><img src = "images/Duckduckgo_logo.png" alt = "Duckduckgo" width = "225" height = "129"/></a></dt>
@@ -40,36 +42,66 @@
 
     <p>Some useful links.</p>
     <ul>
-      <li><a href = "https://Vjudge.net">vjudge</a></li>
+      <li><a href = "https://Vjudge.net" target = "_blank">vjudge</a></li>
       <li><a href = "https://melpa.org/#/">MELPA</a></li>
-      <li><a href = "https://github.com">Github</a></li>
+      <li><a href = "https://github.com" target = "_blank">Github</a></li>
+      <li><a href = "https://translate.google.cn/" target = "_blank">Google Translate</a></li>
     </ul>
     <hr />
+
     <p id = T-list>This is for to-do list</p>
     <table>
       <tr>
-	<th cowlpan = "2">To-Do List</th> <th colspan = "3">Done list</th>
+	<th colspan = "3">Done list</th> <th cowlpan = "3">To-Do List</th>
       </tr>	
       <tr>
-	<th>Name</th> <th>Dead Time</th> <th>Name</th> <th>Dead Time</th> <th>Finished Time</th>
+	<th>Name</th> <th>Dead Time</th> <th>Finished Time</th> <th>Name</th> <th>Dead Time</th> <th>Status</th> <th>Operation</th>
       </tr>
       <tr>
-	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td>
+	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td> <td><form action = "" method = "get"> <input id = "tChange" type = "radio" name = "operation" value = "change"> <lable for = "tChange">Change</lable></form></td>
       </tr>
       <tr>
-	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td>
+	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td> <td><form action = "" method = "get"> <input id = "tChange" type = "radio" name = "operation" value = "change"> <lable for = "tChange">Change</lable></form></td>
+      </tr>
+      <tr>
+	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td> <td><form action = "" method = "get"> <input id = "tChange" type = "radio" name = "operation" value = "change"> <lable for = "tChange">Change</lable></form></td>
+      </tr>
+      <tr>
+	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td> <td><form action = "" method = "get"> <input id = "tChange" type = "radio" name = "operation" value = "change"> <lable for = "tChange">Change</lable></form></td>
       </tr>
     </table>
-    
+    <hr />
+
+    <filedset>
+	<legend>Add New Object</legend>
+	<form action = "" method = "post">
+      <table>
+	<tr>
+	  <td><lable for = "sName">Title</lable></td> <td><lable for = "sDate"> Dead Time</lable></td> <td><lable for = "sPRI">PRI</lable></td>
+	</tr>
+	<tr>
+	  <td><input id = "sName" type = "text" name = "title" maxlength = "15" /></td> <td><input id = "sDate" type = "date" name = "dTime" /></td> <td><select id = "sPRI" name = "PRI">
+	      <option value = "Top">Top</option>
+	      <option value = "High">High</option>
+	      <option value = "Middle" selected = "selected">Middle</option>
+	      <option value = "Low">Low</option>
+	      <option value = "Poor">Poor</option>
+	    </select>
+	  </td>
+	</tr>
+      </table>
+      <lable><textarea name = "detail" cols = "45" rows = "10">Detail...</textarea></lable>
+      <br />
+      <input type = "submit" value = "Submit" />
+	</form>
+    </filedset>
 
 
 
-
-
-
-
+    <br />
     <a href = "doslist/index.html">For more information</a>
 
+    <hr />
     <p>This is for signs.</p>
     <ul>
       <li>computer</li> <li>science</li> <li>techn</li>
@@ -89,6 +121,6 @@
   </body>
   <adress>
     <p><a href="mailto:learnno21@gmail.com">Learnno21@gmail.com</a></p>
-    <p>or text 15889472663</p>
+    <p>or text +86 15889472663</p>
   </adress>
 </html>
