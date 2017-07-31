@@ -1,0 +1,88 @@
+@font-face
+{
+    font-family:'kau';
+    src: url('../fonts/Kau.otf');
+}
+
+
+div.box
+{
+    width: 100%;
+    height: 100%;
+
+}
+
+div.list
+{
+    border-bottom: 1px solid #efefef;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 445px;
+}
+
+
+.tiTle
+{
+    color: rgb(82,67,43);
+    font-family: kau;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+    text-align: center;
+    text-shadow: 1.2px 0.6px 0px rgb(134,116,92);
+}
+
+
+
+legend 
+{
+    margin: 0 auto;    
+}
+
+body
+{
+    background-color: rgba(186,166,142,0.72);
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+
+
+
+#Clock, #clockPicture
+{
+    align-items: right;
+    text-align: right;
+}
+
+h2
+{
+    color: rgb(188,120,75);
+    font-family: Verdana;
+    font-size: 24px;
+}
+
+.firsT
+{
+    text-indent: 450px;
+}
+
+table
+{
+    text-indent: 50px;
+
+}
+
+a:link
+{
+    color: rgb(114,27,7);
+}
+
+a:visited
+{
+    color: rgb(114,27,7);
+}
+

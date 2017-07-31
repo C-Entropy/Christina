@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <title>
-    Christina
+  <head>
+    <title>Christina</title>
+    <link href = "css/index.css" type = "text/css" rel = "stylesheet" />
+    </head>
   </title>
   <body>      
-    <h1 id = "top">Welcome back, Morosith II.</h1>
-    <p>This is for clock.</p>
-    <img src = "images/clock1.jpg" alt = "a picture of clock." width = "100" height = "100"/>
-    <br />
-    <hr />
 
+    <div>
+      <h2 id = "Clock">This is for clock.</h2>
+      <img id = "clockPicture" src = "images/clock1.jpg" alt = "a picture of clock." width = "150" height = "150"/>
+      <br \>
+      <br \>
+      <h1 class = "tiTle">Welcome back, Morosith II,<br />I hope can help you more.</h1>
 
-    <p>This is for search.</p>
-    <lable>
-      <form action = "" method = "get">
-	<p>What do you want to search?</p>
-	<input type = "search" name = "Traget" maxlength = "15" />
+      <form action = "">
+	<lable><h1 class = "tiTle">Password:</h1><input type = "password" maxlength = "15" />
+	</lable>
       </form>
-    </lable>
-    
-    <form action = "">
-      <p>Select enginer:</p>
-      <input id = "sBaidu" type = "radio" name = "enginer" value = "baidu" checked = "checked" /> <lable for = "sBaidu">baidu</lable>
-      <input id = "sZcn" type = "radio" name = "enginer" value = "zcn" /> <lable for = "sZcn"> Z.cn</lable>
-      <input id = "sJingdong" type = "radio" name = "enginer" value = "jingdong" /> <lable for = "sJingdong">jingdong</lable>
-    </form>
-    
+    </div>
 
-    
-    <dl>
-      <dt><a href = "http://www.baidu.com" target = "_blank"><img src = "images/bd_logo1.png" alt = "百度" width = "270" height = "129"/></a></dt>
-      <dd>Maybe is the best one of Chinese.</dd>
-      <br />
-      <dt><a href = "http://www.duckduckgo.com"><img src = "images/Duckduckgo_logo.png" alt = "Duckduckgo" width = "225" height = "129"/></a></dt>
-      <dd>Sometimes works.</dd>
-      <dt><a href = "http://www.google.com"><img src = "images/googlelogo.png" alt = "Google" width = "272" height = "92"\></a></dt>
-      <dd>Anyway, you can't use it.</dd>
-    </dl>
-    <hr />
-    <br />
+    <br \>
+    <br \>
+    <br \>
+    <br \>
+    <br \>
+    <br \>
+    <br \>
+    <br \>
 
-    <p>Some useful links.</p>
-    <ul>
-      <li><a href = "https://Vjudge.net" target = "_blank">vjudge</a></li>
-      <li><a href = "https://melpa.org/#/">MELPA</a></li>
-      <li><a href = "https://github.com" target = "_blank">Github</a></li>
-      <li><a href = "https://translate.google.cn/" target = "_blank">Google Translate</a></li>
-    </ul>
-    <hr />
-
-    <p id = T-list>This is for to-do list</p>
+    <!-- Some useful links. -->
     <table>
       <tr>
-	<th colspan = "3">Done list</th> <th cowlpan = "3">To-Do List</th>
+	<td class = "firsT"><a class = "uLink" href = "https://Vjudge.net" target = "_blank">Vjudge</a></td>
+	<td><a class = "uLink" href = "https://melpa.org/#/" target = "_blank">MELPA</a></td>
+	<td><a class = "uLink" href = "https://github.com" target = "_blank">Github</a></td>
+	<td><a class = "uLink" href = "https://translate.google.cn/" target = "_blank">Google Translate</a></td>
+      </tr>
+    </table>
+
+    <!-- End of links. -->
+
+    <!--This is for search.-->
+    <form action = "">
+      <filedset>
+	<div><lable class = "tiTle">Search for:
+	    <input type = "search" name = "Traget" maxlength = "15" /></lable>
+	</div>
+	
+	<div>Enginer:
+	<input id = "sBaidu" type = "radio" name = "enginer" value = "baidu" checked = "checked" /> <lable for = "sBaidu">baidu</lable>
+	<input id = "sZcn" type = "radio" name = "enginer" value = "zcn" /> <lable for = "sZcn"> Z.cn</lable>
+	<input id = "sJingdong" type = "radio" name = "enginer" value = "jingdong" /> <lable for = "sJingdong">jingdong</lable>
+	</div>
+	
+	<div>Signs:
+	  <lable>recent
+	    <input type = "checkbox" name = "signs" value = "recent" checked = "checked" /></lable>
+	  <lable>computer
+	    <input type = "checkbox" name = "signs" value = "computer" /></lable>
+	  <lable>science
+	    <input type = "checkbox" name = "signs" value = "science" /></lable>
+	  <lable>techn
+	    <input type = "checkbox" name = "signs" value = "techn" /></lable>
+	  <lable>one
+	    <input type = "checkbox" name = "signs" value = "one" /></lable>
+	  <lable>two
+	    <input type = "checkbox" name = "signs" value = "two" /></lable>
+	  <lable>three
+	    <input type = "checkbox" name = "signs" value = "three" /></lable>
+	</div>
+      </filedset>
+    </form>
+    
+    
+    <!--End of search.-->
+
+    <!-- This is for to-do list-->
+    <h2 id = T-list>This is for to-do list</h2>
+    <table>
+      <tr>
+	<th class = "firsT" colspan = "3">Done list</th> <th cowlpan = "3">To-Do List</th>
       </tr>	
       <tr>
-	<th>Name</th> <th>Dead Time</th> <th>Finished Time</th> <th>Name</th> <th>Dead Time</th> <th>Status</th> <th>Operation</th>
+	<th class = "firsT">Name</th> <th>Dead Time</th> <th>Finished Time</th> <th>Name</th> <th>Dead Time</th> <th>Status</th> <th>Operation</th>
       </tr>
       <tr>
-	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td> <td><form action = "" method = "get"> <input id = "tChange" type = "radio" name = "operation" value = "change"> <lable for = "tChange">Change</lable></form></td>
+	<td class = "firsT">balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td> <td><form action = "" method = "get"> <input id = "tChange" type = "radio" name = "operation" value = "change"> <lable for = "tChange">Change</lable></form></td>
       </tr>
       <tr>
 	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td> <td><form action = "" method = "get"> <input id = "tChange" type = "radio" name = "operation" value = "change"> <lable for = "tChange">Change</lable></form></td>
@@ -70,57 +98,63 @@
 	<td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td><td>balabala</td> <td><form action = "" method = "get"> <input id = "tChange" type = "radio" name = "operation" value = "change"> <lable for = "tChange">Change</lable></form></td>
       </tr>
     </table>
-    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
     <filedset>
-	<legend>Add New Object</legend>
-	<form action = "" method = "post">
-      <table>
-	<tr>
-	  <td><lable for = "sName">Title</lable></td> <td><lable for = "sDate"> Dead Time</lable></td> <td><lable for = "sPRI">PRI</lable></td>
-	</tr>
-	<tr>
-	  <td><input id = "sName" type = "text" name = "title" maxlength = "15" /></td> <td><input id = "sDate" type = "date" name = "dTime" /></td> <td><select id = "sPRI" name = "PRI">
-	      <option value = "Top">Top</option>
-	      <option value = "High">High</option>
-	      <option value = "Middle" selected = "selected">Middle</option>
-	      <option value = "Low">Low</option>
-	      <option value = "Poor">Poor</option>
-	    </select>
-	  </td>
-	</tr>
-      </table>
-      <lable><textarea name = "detail" cols = "45" rows = "10">Detail...</textarea></lable>
-      <br />
-      <input type = "submit" value = "Submit" />
-	</form>
+      <legend class = "tiTle">Add New Object</legend>
+      <form action = "" method = "post">
+	<div class= "list">
+	  <lable for = "sName">Title:</lable>
+	  <input id = "sName" type = "text" name = "title" maxlength = "15" />
+	</div>
+
+	<div class = "list">
+	  <lable for = "sDate"> Dead Time</lable>
+	  <input id = "sDate" type = "date" name = "dTime" />
+	  <lable for = "sPRI">PRI</lable>
+	  <select id = "sPRI" name = "PRI">
+	    <option value = "Top">Top</option>
+	    <option value = "High">High</option>
+	    <option value = "Middle" selected = "selected">Middle</option>
+	    <option value = "Low">Low</option>
+	    <option value = "Poor">Poor</option>
+	  </select>
+	</div>
+	<div class = "list">
+	<lable><textarea name = "detail" cols = "53" rows = "15">Detail...</textarea></lable>
+	</div>
+	<div class = "list">
+	  <input type = "submit" value = "Submit" />
+	</div>
+      </form>
     </filedset>
 
+    <!-- End of To-do list -->
+    
+    <h2>Audio Player</h2>
+    <audio src = "audio/test.mp3" controls><h2>Not suppose</h2></audio>
+
+    <hr />
+    <br />
+
+    
 
 
     <br />
     <a href = "doslist/index.html">For more information</a>
 
-    <hr />
-    <p>This is for signs.</p>
-    <ul>
-      <li>computer</li> <li>science</li> <li>techn</li>
-      <li>one</li> <li>tow</li> <li>three</li>
-    </ul>
-    <hr />
-    <br />
-    <p>This is for recent files</p>
-    <br />
-    <hr />
-    <br />
-    <p>I hope can help you with more.</p>
+
     <br />
     <hr />
     <br />
     <a href = "#top">Back to TOP</a>
   </body>
   <adress>
-    <p><a href="mailto:learnno21@gmail.com">Learnno21@gmail.com</a></p>
-    <p>or text +86 15889472663</p>
+    <h2><a href="mailto:learnno21@gmail.com">Learnno21@gmail.com</a></h2>
+    <h2>or text +86 15889472663</h2>
   </adress>
 </html>
